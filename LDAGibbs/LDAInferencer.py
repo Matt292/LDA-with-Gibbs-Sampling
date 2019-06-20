@@ -30,7 +30,7 @@ class LDAInferencer:
         self.model.nw[w][topic] -= 1
         self.model.nd[m][topic] -= 1
         self.model.nwsum[topic] -= 1
-        self.model.ndsum[n] -= 1
+        self.model.ndsum[m] -= 1
 
         v_beta = float(self.model.V * self.model.beta)
         k_alpha = float(self.model.K * self.model.alpha)
